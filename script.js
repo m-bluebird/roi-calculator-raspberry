@@ -13,6 +13,18 @@ function calculateROI() {
         return;
     }
 
+    // Check for negative values
+    if (
+        costPerSample < 0 ||
+        samplesPerMonth < 0 ||
+        reductionPercentage < 0 ||
+        transportationCostPerSample < 0 ||
+        softwareCost < 0
+    ) {
+        alert("Inputs cannot be negative. Please enter positive values.");
+        return;
+    }
+
     // Calculate reduced samples
     const reducedSamples = samplesPerMonth * reductionPercentage;
 

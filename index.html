@@ -8,21 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>ROI Calculator</h1>
+        <h1>Zara | Cost Savings From Instantaneous Sampling</h1>
         <form id="roi-form">
-            <label for="costPerSample">Cost per Sample (X):</label>
+            <label for="costPerSample">Average Production Cost per Sample, USD:</label>
             <input type="number" id="costPerSample" placeholder="Enter cost per sample" required>
 
-            <label for="samplesPerMonth">Number of Samples per Month (Y):</label>
+            <label for="samplesPerMonth">Number of Samples per Month:</label>
             <input type="number" id="samplesPerMonth" placeholder="Enter number of samples" required>
 
-            <label for="reductionPercentage">Reduction Percentage (Z):</label>
+            <label for="reductionPercentage">Reduction in Samples Needed, %:</label>
             <input type="number" id="reductionPercentage" placeholder="Enter reduction % (e.g., 40)" required>
 
-            <label for="transportationSavings">Annual Transportation Savings (B):</label>
+            <label for="transportationSavings">Average Transportation Cost Per Sample, USD:</label>
             <input type="number" id="transportationSavings" placeholder="Enter transportation savings" required>
 
-            <label for="softwareCost">Annual Software Cost (C):</label>
+            <label for="softwareCost">Annual Costs of Raspberry AI (C):</label>
             <input type="number" id="softwareCost" placeholder="Enter software cost" required>
 
             <button type="button" onclick="calculateROI()">Calculate ROI</button>
@@ -30,10 +30,9 @@
 
         <div id="results">
             <h2>Results:</h2>
-            <p id="monthlySavings">Monthly Savings from Samples: </p>
-            <p id="annualSavings">Annual Savings from Samples: </p>
-            <p id="totalSavings">Total Annual Savings: </p>
-            <p id="roi">ROI: </p>
+            <p id="monthlySavings">Monthly Savings: </p>
+            <p id="totalSavings">Annual Savings (S): </p>
+            <p id="roi">ROI, % (Savings-C)/C: </p>
         </div>
     </div>
     <script src="script.js"></script>

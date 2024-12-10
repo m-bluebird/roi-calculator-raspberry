@@ -37,7 +37,7 @@ function calculateROI() {
     document.getElementById('explainAnnualSavings').innerText = 
         `Annual Savings = Monthly Savings × 12 = $${monthlySavings.toFixed(2)} × 12 = $${annualSavings.toFixed(2)}`;
     document.getElementById('explainROI').innerText = 
-        `ROI = ((Annual Savings - Software Cost) / Software Cost) × 100 = (($${annualSavings.toFixed(2)} - $${softwareCost.toFixed(2)}) / $${softwareCost.toFixed(2)}) × 100 = ${roi.toFixed(2)}%`;
+        `ROI = ((Annual Savings - Software Cost) / Software Cost) × 100% = (($${annualSavings.toFixed(2)} - $${softwareCost.toFixed(2)}) / $${softwareCost.toFixed(2)}) × 100 = ${roi.toFixed(2)}%`;
 
     // Show the explanation section
     document.getElementById('explanation').classList.remove('hidden');

@@ -18,7 +18,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #007BFF;
+    color: #ca1f7b; /* Updated to Magenta */
 }
 
 form label {
@@ -38,7 +38,7 @@ form input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #ca1f7b; /* Updated to Magenta */
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #a91b68; /* Darker magenta for hover effect */
 }
 
 #results {

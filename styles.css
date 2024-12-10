@@ -28,11 +28,15 @@ form label {
 }
 
 form input {
-    width: 100%;
+    width: 80%; /* Set a narrower width (e.g., 80% of the container) */
+    max-width: 300px; /* Ensure input boxes do not exceed a specific size */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: block; /* Ensures the inputs stay on separate lines */
+    margin-left: auto; /* Centers the input box horizontally */
+    margin-right: auto;
 }
 
 button {

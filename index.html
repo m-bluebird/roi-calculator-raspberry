@@ -10,8 +10,6 @@
     <div class="container">
         <h1>Zara | Cost Savings From Instantaneous Sampling</h1>
         <form id="roi-form">
-            <label for="costPerSample">Average Production Cost per Sample, USD:</label>
-            <input type="number" id="costPerSample" placeholder="Enter cost per sample" required>
 
             <label for="samplesPerMonth">Number of Samples per Month:</label>
             <input type="number" id="samplesPerMonth" placeholder="Enter number of samples" required>
@@ -19,6 +17,9 @@
             <label for="reductionPercentage">Reduction in Samples Needed, %:</label>
             <input type="number" id="reductionPercentage" placeholder="Enter reduction % (e.g., 40)" required>
 
+            <label for="costPerSample">Average Production Cost per Sample, USD:</label>
+            <input type="number" id="costPerSample" placeholder="Enter cost per sample" required>            
+            
             <label for="transportationSavings">Average Transportation Cost Per Sample, USD:</label>
             <input type="number" id="transportationSavings" placeholder="Enter transportation savings" required>
 
@@ -32,7 +33,7 @@
             <h2>Results:</h2>
             <p id="monthlySavings">Monthly Savings: </p>
             <p id="totalSavings">Annual Savings (S): </p>
-            <p id="roi">ROI, % (Savings-C)/C: </p>
+            <p id="roi">ROI, % (Annual Savings-C)/C: </p>
         </div>
     </div>
     <script src="script.js"></script>

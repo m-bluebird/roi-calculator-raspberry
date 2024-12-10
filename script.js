@@ -45,7 +45,7 @@ function calculateROI() {
 
     // Display explanation with thousands separator
     document.getElementById('explainMonthlySavings').innerText = 
-        `Monthly Savings = Reduced Samples × (Cost per Sample + Transportation Cost per Sample) = (${samplesPerMonth.toLocaleString()} * ${(reductionPercentage * 100).toFixed(2)}) × ($${costPerSample.toLocaleString()} + $${transportationCostPerSample.toLocaleString()}) = $${monthlySavings.toLocaleString()}`;
+        `Monthly Savings = Reduced Samples × (Cost per Sample + Transportation Cost per Sample) = (${samplesPerMonth.toLocaleString()} * ${(reductionPercentage * 100).toFixed(2)}%) × ($${costPerSample.toLocaleString()} + $${transportationCostPerSample.toLocaleString()}) = $${monthlySavings.toLocaleString()}`;
     document.getElementById('explainAnnualSavings').innerText = 
         `Annual Savings = Monthly Savings × 12 = $${monthlySavings.toLocaleString()} × 12 = $${annualSavings.toLocaleString()}`;
     document.getElementById('explainROI').innerText = 

@@ -1,78 +1,49 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f9;
+color: #333;
 }
-
-.main-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 20px;
-}
-
-.calculator-section {
-    flex: 1; /* Adjust the width proportion */
-    max-width: 50%; /* Limit calculator width */
-}
-
-.image-section {
-    flex: 1; /* Adjust the width proportion */
-    max-width: 50%; /* Limit image section width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.side-image {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for styling */
-}
-
 .container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+margin: 50px auto;
+padding: 20px;
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
-    text-align: center;
-    color: #ca1f7b; /* Magenta color */
+text-align: center;
+margin-bottom: 20px;
+color: #ca1f7b; /* Updated to Magenta */
 }
-
 form label {
-    display: block; /* Place each label on a separate line */
-    margin-bottom: 5px;
-    font-weight: bold;
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
 }
-
 form input {
-    width: 100%;
-    max-width: 400px; /* Inputs won't be too wide */
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: block; /* Ensure each input is on its own line */
+width: 80%; /* Set a narrower width (e.g., 80% of the container) */
+max-width: 300px; /* Ensure input boxes do not exceed a specific size */
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+display: block; /* Ensures the inputs stay on separate lines */
+margin-left: auto; /* Centers the input box horizontally */
+margin-right: auto;
 }
-
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ca1f7b; /* Magenta color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+width: 100%;
+padding: 10px;
+background-color: #ca1f7b; /* Updated to Magenta */
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
 }
-
 button:hover {
-    background-color: #a91b68; /* Darker magenta for hover effect */
+background-color: #a91b68; /* Darker magenta for hover effect */
 }

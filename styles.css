@@ -62,3 +62,16 @@ button:hover {
     margin: 10px 0;
     font-weight: bold;
 }
+
+.hidden {
+    display: none;
+}
+
+#explanation {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eef6ff;
+    border-radius: 5px;
+    border: 1px solid #d6e4f5;
+}
+

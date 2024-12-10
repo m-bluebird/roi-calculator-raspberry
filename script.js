@@ -25,19 +25,19 @@ function calculateROI() {
     // Calculate ROI
     const roi = ((annualSavings - softwareCost) / softwareCost) * 100;
 
-    // Display results
-    document.getElementById('monthlySavings').innerText = `Monthly Savings: $${monthlySavings.toFixed(2)}`;
-    document.getElementById('annualSavings').innerText = `Annual Savings: $${annualSavings.toFixed(2)}`;
-    document.getElementById('totalSavings').innerText = `Total Annual Savings: $${annualSavings.toFixed(2)}`;
+    // Display results with thousands separator
+    document.getElementById('monthlySavings').innerText = `Monthly Savings: $${monthlySavings.toLocaleString()}`;
+    document.getElementById('annualSavings').innerText = `Annual Savings: $${annualSavings.toLocaleString()}`;
+    document.getElementById('totalSavings').innerText = `Total Annual Savings: $${annualSavings.toLocaleString()}`;
     document.getElementById('roi').innerText = `ROI: ${roi.toFixed(2)}%`;
 
-    // Display explanation
+    // Display explanation with thousands separator
     document.getElementById('explainMonthlySavings').innerText = 
-        `Monthly Savings = Reduced Samples × (Cost per Sample + Transportation Cost per Sample) = ${reducedSamples.toFixed(2)} × ($${costPerSample.toFixed(2)} + $${transportationCostPerSample.toFixed(2)}) = $${monthlySavings.toFixed(2)}`;
+        `Monthly Savings = Reduced Samples × (Cost per Sample + Transportation Cost per Sample) = ${reducedSamples.toLocaleString()} × ($${costPerSample.toLocaleString()} + $${transportationCostPerSample.toLocaleString()}) = $${monthlySavings.toLocaleString()}`;
     document.getElementById('explainAnnualSavings').innerText = 
-        `Annual Savings = Monthly Savings × 12 = $${monthlySavings.toFixed(2)} × 12 = $${annualSavings.toFixed(2)}`;
+        `Annual Savings = Monthly Savings × 12 = $${monthlySavings.toLocaleString()} × 12 = $${annualSavings.toLocaleString()}`;
     document.getElementById('explainROI').innerText = 
-        `ROI = ((Annual Savings - Software Cost) / Software Cost) × 100% = (($${annualSavings.toFixed(2)} - $${softwareCost.toFixed(2)}) / $${softwareCost.toFixed(2)}) × 100 = ${roi.toFixed(2)}%`;
+        `ROI = ((Annual Savings - Software Cost) / Software Cost) × 100 = (($${annualSavings.toLocaleString()} - $${softwareCost.toLocaleString()}) / $${softwareCost.toLocaleString()}) × 100 = ${roi.toFixed(2)}%`;
 
     // Show the explanation section
     document.getElementById('explanation').classList.remove('hidden');

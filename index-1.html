@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ROI Calculator</h1>
+        <form id="roi-form">
+            <label for="costPerSample">Cost per Sample (X):</label>
+            <input type="number" id="costPerSample" placeholder="Enter cost per sample" required>
+
+            <label for="samplesPerMonth">Number of Samples per Month (Y):</label>
+            <input type="number" id="samplesPerMonth" placeholder="Enter number of samples" required>
+
+            <label for="reductionPercentage">Reduction Percentage (Z):</label>
+            <input type="number" id="reductionPercentage" placeholder="Enter reduction % (e.g., 40)" required>
+
+            <label for="transportationSavings">Annual Transportation Savings (B):</label>
+            <input type="number" id="transportationSavings" placeholder="Enter transportation savings" required>
+
+            <label for="softwareCost">Annual Software Cost (C):</label>
+            <input type="number" id="softwareCost" placeholder="Enter software cost" required>
+
+            <button type="button" onclick="calculateROI()">Calculate ROI</button>
+        </form>
+
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="monthlySavings">Monthly Savings from Samples: </p>
+            <p id="annualSavings">Annual Savings from Samples: </p>
+            <p id="totalSavings">Total Annual Savings: </p>
+            <p id="roi">ROI: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

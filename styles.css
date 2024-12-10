@@ -46,6 +46,22 @@ h1 {
     color: #ca1f7b; /* Magenta color */
 }
 
+form label {
+    display: block; /* Place each label on a separate line */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    max-width: 400px; /* Inputs won't be too wide */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensure each input is on its own line */
+}
+
 button {
     width: 100%;
     padding: 10px;
@@ -60,37 +76,3 @@ button {
 button:hover {
     background-color: #a91b68; /* Darker magenta for hover effect */
 }
-
-#results {
-    margin-top: 20px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-#results p {
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.hidden {
-    display: none;
-}
-
-#explanation {
-    margin-top: 20px;
-    padding: 10px;
-    background: #eef6ff;
-    border-radius: 5px;
-    border: 1px solid #d6e4f5;
-}
-
-.logo {
-    display: block;
-    margin: 0 auto 20px; /* Center the logo and add space below it */
-    max-width: 100%;    /* Ensure the logo scales properly */
-    height: auto;       /* Maintain aspect ratio */
-    max-height: 150px;  /* Optional: Limit maximum height */
-}
-
